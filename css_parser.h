@@ -3,10 +3,10 @@
 
 class CSSRule {
 public:
-    std::string Selector;
-    std::vector<CSSProperty> Properties;
+    std::string selector;
+    std::vector<CSSProperty> *properties;
     CSSRule() {
-        Properties = new std::vector<CSSProperty>();
+        properties = new std::vector<CSSProperty>();
     }
 };
 
@@ -32,7 +32,7 @@ class Parser {
 
         std::string selector = source.substr(i, opn_br_pos);
         CSSRule rule = new CSSRule();
-        rule->Selector = selector;
+        rule.selector = selector;
         std::size_t cls_br_pos = source.find("}", curr);
 
         if (cls_br_pos == str::npos) {
