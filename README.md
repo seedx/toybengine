@@ -1,7 +1,7 @@
 toybengine
 ----------
 
-- build system: make
+- build system: cmake
 
 3rd party libs
 ----------
@@ -15,6 +15,13 @@ refernce:
 
 CSS subset
 ----------
+
+Selectors:
+1. element (div, span, etc.)
+2. id (#el-container)
+3. class (.some-class)
+
+Currently no child selectors support.
 
 Example containing all of supported features:
 ```css
@@ -31,11 +38,3 @@ div {
 }
 ```
 
-docs
-----------
-
-https://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization
-
-hash<string, lambda>
-
-csshash("color")("#232356", node)
