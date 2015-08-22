@@ -42,10 +42,32 @@ class Parser {
             // log_warning("invalid css after %d", curr);
         }
 
-        rule->properties;
+        rule->properties = ParseProperties(source.substr(opn_br_pos, cls_br_pos);
         
         return rules;
     } 
+    
+    static std::vector<CSSProperty>* ParseProperties(const std::string& source) {
+        std::size_t len = source.length();
+        std::size_t i = 0;
+        std::size_t colon_pos = -1;
+        colon_pos = source.find(":", i);
+
+        if (opn_br_pos == std::string::npos) {
+            // TODO: implement log
+            // log_warning("invalid css after %d", i);
+        }
+
+        std::string selector = source.substr(i, opn_br_pos);
+        CSSRule* rule = new CSSRule();
+        rule->selector = selector;
+        std::size_t cls_br_pos = source.find("}", opn_br_pos);
+
+        if (cls_br_pos == std::string::npos) {
+            // log_warning("invalid css after %d", curr);
+        }
+
+    }
 };
 
 
