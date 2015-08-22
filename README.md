@@ -17,9 +17,10 @@ CSS subset
 ----------
 
 Selectors:
-    1. element (div, span, etc.)
-    2. id (#el-container)
-    3. class (.some-class)
+
+1. element (div, span, etc.)
+2. id (#el-container)
+3. class (.some-class)
 
 Currently no child selectors support.
 
