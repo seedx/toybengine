@@ -1,17 +1,12 @@
 toybengine
 ----------
 
-- build system: cmake
+Tiny toy HTML renderer in C++ for learning purposes.
 
 3rd party libs
 ----------
 
 - FLTK
-
-
-refernce:
-- https://en.wikipedia.org/wiki/Dillo
-
 
 CSS subset
 ----------
